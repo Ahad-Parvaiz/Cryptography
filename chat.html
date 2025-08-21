@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptography and Cryptanalysis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9fafc;
+      color: #333;
+    }
+    header {
+      background: #1a237e;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: #1a237e;
+      font-weight: bold;
+      margin: 0 auto 1rem auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    section h2 {
+      margin: 0;
+      background: #3949ab;
+      color: #fff;
+      padding: 1rem;
+      cursor: pointer;
+    }
+    section .content {
+      display: none;
+      padding: 1rem;
+    }
+    section.active .content {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    ul {
+      margin: 0.5rem 0 0 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🔐</div>
+    <h1>Cryptography and Cryptanalysis</h1>
+    <p>A structured overview of principles, techniques, and importance</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>What is Cryptography?</h2>
+      <div class="content">
+        <p><strong>Definition:</strong> Ensures secure information storage and transmission using mathematical methods and algorithms.</p>
+        <p><strong>Primary Goals:</strong></p>
+        <ul>
+          <li>Confidentiality</li>
+          <li>Integrity</li>
+          <li>Authentication</li>
+          <li>Non-repudiation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Types of Cryptography</h2>
+      <div class="content">
+        <ul>
+          <li>Symmetric Cryptography</li>
+          <li>Asymmetric Cryptography</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>What is Cryptanalysis?</h2>
+      <div class="content">
+        <p><strong>Definition:</strong> Uncovers weaknesses in cryptosystems, breaks them, decodes encrypted information, and evaluates security vulnerabilities.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Types of Cryptanalysis</h2>
+      <div class="content">
+        <ul>
+          <li>Breaking Attacks</li>
+          <li>Analysis Attacks</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Differences Between Cryptography and Cryptanalysis</h2>
+      <div class="content">
+        <p><strong>Purpose:</strong></p>
+        <ul>
+          <li>Cryptography: Protect information</li>
+          <li>Cryptanalysis: Obtain protected information</li>
+        </ul>
+        <p><strong>Users:</strong></p>
+        <ul>
+          <li>Cryptography: Seek to protect</li>
+          <li>Cryptanalysis: Decipher protected</li>
+        </ul>
+        <p><strong>Methods:</strong></p>
+        <ul>
+          <li>Cryptography: Uses mathematical algorithms/protocols</li>
+          <li>Cryptanalysis: Exploits weaknesses in algorithms/protocols</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Fundamental Principles of Cryptography</h2>
+      <div class="content">
+        <ul>
+          <li>Kerckhoffs’s Principle</li>
+          <li>Shannon’s Uncertainty Theory</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Cryptanalysis Techniques</h2>
+      <div class="content">
+        <ul>
+          <li>Brute Force Attacks</li>
+          <li>Dictionary Attacks</li>
+          <li>Side-Channel Attacks</li>
+          <li>Statistical Attacks</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Importance of Cryptography and Cryptanalysis</h2>
+      <div class="content">
+        <ul>
+          <li>Security: Indispensable</li>
+          <li>Reliability: Helps test systems</li>
+          <li>Development: Continually evolving</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 Cryptography Overview. Built for learning.
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    sections.forEach(sec => {
+      sec.querySelector("h2").addEventListener("click", () => {
+        sec.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>
